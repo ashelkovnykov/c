@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.17)
+project(C C)
+project(concepts C)
+project(expressions C)
+project(operators C)
+project(preprocessor C)
+project(statements C)
+project(types C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_library(conceptsLibrary libs/conceptsLibrary/conceptsLibrary.h libs/conceptsLibrary/headers/comments.h libs/conceptsLibrary/src/scope.c libs/conceptsLibrary/headers/scope.h libs/conceptsLibrary/src/namespace.c libs/conceptsLibrary/headers/namespace.h libs/conceptsLibrary/src/alignment.c libs/conceptsLibrary/headers/alignment.h libs/conceptsLibrary/src/undefined.c libs/conceptsLibrary/headers/undefined.h)
+add_library(expressionsLibrary libs/expressionsLibrary/expressionsLibrary.h libs/expressionsLibrary/src/compound.c libs/expressionsLibrary/headers/compound.h libs/expressionsLibrary/src/generic.c libs/expressionsLibrary/headers/generic.h)
+add_library(operatorsLibrary libs/operatorsLibrary/operatorsLibrary.h libs/operatorsLibrary/src/assignment.c libs/operatorsLibrary/headers/assignment.h libs/operatorsLibrary/src/increment.c libs/operatorsLibrary/headers/increment.h libs/operatorsLibrary/src/arithmetic.c libs/operatorsLibrary/headers/arithmetic.h libs/operatorsLibrary/src/logical.c libs/operatorsLibrary/headers/logical.h libs/operatorsLibrary/src/comparison.c libs/operatorsLibrary/headers/comparison.h libs/operatorsLibrary/src/member.c libs/operatorsLibrary/headers/member.h libs/operatorsLibrary/src/other.c libs/operatorsLibrary/headers/other.h)
+add_library(preprocessorLibrary libs/preprocessorLibrary/preprocessorLibrary.h libs/preprocessorLibrary/headers/conditionals.h libs/preprocessorLibrary/src/conditionals.c libs/preprocessorLibrary/headers/error.h libs/preprocessorLibrary/src/error.c libs/preprocessorLibrary/src/replacement.c libs/preprocessorLibrary/headers/replacement.h)
+add_library(statementsLibrary libs/statementsLibrary/statementsLibrary.h libs/statementsLibrary/src/selection.c libs/statementsLibrary/headers/selection.h libs/statementsLibrary/src/iteration.c libs/statementsLibrary/headers/iteration.h libs/statementsLibrary/src/jump.c libs/statementsLibrary/headers/jump.h)
+add_library(typesLibrary libs/typesLibrary/typesLibrary.h libs/typesLibrary/typesLibrary.h libs/typesLibrary/headers/boolean.h libs/typesLibrary/headers/character.h libs/typesLibrary/headers/integer.h libs/typesLibrary/headers/floating.h libs/typesLibrary/headers/enumeration.h libs/typesLibrary/headers/array.h libs/typesLibrary/headers/structures.h libs/typesLibrary/headers/union.h libs/typesLibrary/headers/pointers.h libs/typesLibrary/headers/qualifiers.h libs/typesLibrary/src/array.c libs/typesLibrary/src/pointers.c libs/typesLibrary/headers/bitfield.h libs/typesLibrary/src/typedef.c libs/typesLibrary/headers/typedef.h libs/typesLibrary/src/functions.c libs/typesLibrary/src/functions.h)
+add_executable(C src/main.c)

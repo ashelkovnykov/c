@@ -1,0 +1,9 @@
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/typesLibrary.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/statementsLibrary.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/C.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/conceptsLibrary.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/expressionsLibrary.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/operatorsLibrary.dir
+/home/ashelkov/Study/practice/languages/C/cmake-build-debug/CMakeFiles/preprocessorLibrary.dir
