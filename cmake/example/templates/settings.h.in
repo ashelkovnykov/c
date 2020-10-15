@@ -1,0 +1,7 @@
+#ifndef SETTINGS_H
+#define SETTINGS_H
+
+#cmakedefine CUSTOM_MATH
+#define VERSION "@Example_VERSION@"
+
+#endif // SETTINGS_H
