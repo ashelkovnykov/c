@@ -1,2 +1,0 @@
-/usr/bin/ar qc libexampleLibrary.a  CMakeFiles/exampleLibrary.dir/libs/exampleLibrary/src/comments.c.o CMakeFiles/exampleLibrary.dir/libs/exampleLibrary/src/scope.c.o CMakeFiles/exampleLibrary.dir/libs/exampleLibrary/src/namespace.c.o CMakeFiles/exampleLibrary.dir/libs/exampleLibrary/src/alignment.c.o CMakeFiles/exampleLibrary.dir/libs/exampleLibrary/src/undefined.c.o
-/usr/bin/ranlib libexampleLibrary.a

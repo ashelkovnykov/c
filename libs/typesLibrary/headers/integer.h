@@ -2,8 +2,9 @@
 #define TYPES_INTEGER_H
 
 struct integers {
+  
   //
-  // LINUX, UNIX, & MAC OS
+  // LINUX, UNIX, & MAC OS (IEEE standard LP64)
   //
   
   short s1; // 16-bit, represents integers in range [-32,768 - 32,767]
@@ -25,10 +26,16 @@ struct integers {
   unsigned long int l6;
   
   //
-  // WINDOWS
+  // WINDOWS (IEEE standard LLP64)
   //
   
-  long long ll1; // Equivalent to 'long' above
+  long wl1; // Equivalent to 'int' above
+  long int wl2;
+  signed long wl3;
+  signed long int wl4;
+  unsigned long wl5; // Equivalent to 'unsigned int' above
+  unsigned long int wl6;
+  long long wll1; // Equivalent to 'long' above
 };
 
 #endif //TYPES_INTEGER_H

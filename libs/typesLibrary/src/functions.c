@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include "functions.h"
+#include "../headers/functions.h"
 
 // Since function return types are unqualified, the const qualifier does nothing but is necessary to match the function declaration
 const int functionOne(int x) {
