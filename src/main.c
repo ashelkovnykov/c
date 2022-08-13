@@ -28,12 +28,12 @@
 #include <wchar.h>        // Functions for multi-byte and wide characters
 #include <wctype.h>       // Functions for determining the type of character contained in a wchar object
 
-#include "../libs/conceptsLibrary/conceptsLibrary.h"
-#include "../libs/expressionsLibrary/expressionsLibrary.h"
-#include "../libs/operatorsLibrary/operatorsLibrary.h"
-#include "../libs/preprocessorLibrary/preprocessorLibrary.h"
-#include "../libs/statementsLibrary/statementsLibrary.h"
-#include "../libs/typesLibrary/typesLibrary.h"
+#include "../libs/concepts/concepts.h"
+#include "../libs/expressions/expressions.h"
+#include "../libs/operators/operators.h"
+#include "../libs/preprocessor/preprocessor.h"
+#include "../libs/statements/statements.h"
+#include "../libs/types/types.h"
 
 int main(int argc, char *argv[]) {
   
