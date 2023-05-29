@@ -9,8 +9,8 @@ struct S1 {
 
 struct S2 {
   char c1; // Size = 1
-  int i1; // Size = 4
   // Padding = 3
+  int i1; // Size = 4
 }; // Size = 8, Alignment = 4
 
 struct S3 {
