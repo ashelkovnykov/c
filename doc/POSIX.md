@@ -7,6 +7,28 @@ OS.
 
 This section documents some of those functions.
 
+## `sigsetjmp` / `siglongjmp`
+
+The `setjmp` and `longjmp` functions are often used by signal handlers to
+set up a return point within the main loop of a program and return to it via
+non-local branching.
+
+The default behaviour of a signal handler is to add a signal to the "signal
+mask" when it's caught. This prevents subsequent occurrences of the same signal
+from interrupting the signal handler.
+
+The above two functionalities introduce a bug: what happens to the signal mask
+when you `longjmp` out of the signal handler? `setjmp` and `longjmp` do not
+define a standard for this. On FreeBSD and macOS, these functions save and
+restore the signal mask. On Linux and Solaris, they do not. In order to not
+disturb the long-standing functionality of these functions, POSIX instead
+introduced two new functions which explicitly define a standard around saving
+and restoring the signal mask: `sigsetjmp` and `siglongjmp`.
+
+NOTE: FreeBSD and macOS also define versions of `setjmp` and `longjmp` that do
+not save / restore the signal mask, in case such functions are needed: `_setjmp`
+and `_longjmp`.
+
 ## `mmap`
 
 The `mmap` function is responsible for creating "memory mappings" (direct
